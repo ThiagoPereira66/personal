@@ -44,10 +44,10 @@ color: #DCDCDC;
 
 export const Casa = styled.li`
 a{
-    font-size: 3rem;
+    font-size: 2rem;
     color:#DCDCDC;
 }
-font-size: 3rem;
+font-size: 2rem;
     color:#DCDCDC;
 
 `
