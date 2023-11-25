@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-color: silver;
+background-color: #e5e5e5;
 `
 
 export const Card = styled.div`
@@ -15,7 +15,7 @@ justify-content: space-around;
 `
 
 export const Img = styled.img`
-width: 10rem;
+width: 11rem;
 border-radius: .5rem;
 margin-bottom: 2rem;
 box-shadow: 0 0 7px black;

@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-width: 100vw;
+width: 100%;
 display: flex;
 flex-direction: column;
-background-color: #228B22;
+background-color: #dbdbdb;
+border-bottom: 1px solid #b7b7b7;
 
 `
 
@@ -24,7 +25,7 @@ font-weight: 600;
 position: relative;
 
 a{
-color: #DCDCDC;
+color: #2e2e2e;
 
 }
 
@@ -32,7 +33,7 @@ color: #DCDCDC;
     content: '';
     height: 3px;
     width:${(props) => (props.isActive ? '100%' : 0)};
-    background-color: #C0C0C0;
+    background-color: #111111;
     position: absolute;    
     bottom: -10px;
     left: 50%;
@@ -45,17 +46,59 @@ color: #DCDCDC;
 export const Casa = styled.li`
 a{
     font-size: 2rem;
-    color:#DCDCDC;
+    color:#2e2e2e;
 }
 font-size: 2rem;
-    color:#DCDCDC;
+    color:#2e2e2e;
 
 `
+export const CaixaMenu = styled.div`
+width: 100%;
+height: 100%;
+position: fixed;
+right: 0;
+top: 0;
+background-color: rgba(0, 0, 0, .5);
+z-index: 100;
+
+`
+
+export const Opcoes = styled.div`
+width: 70%;
+height: 100%;
+background-color: #b5b5b5;
+position: absolute;
+right: 0;
+border: none;
+
+img{
+    width: 100%;
+    position: relative;
+}
+
+ol{
+    overflow-y:auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+    height: 40rem;
+    
+}
+
+li{
+    border-bottom: 1px solid black;
+    width: 90%;
+    padding: .5rem 0;
+}
+`
+
+
 
 
 export const Menu = styled.div`
 width: 100%;
-background-color: #008000;
+background-color: #dbdbdb;
 display: flex;
 justify-content: space-between;
 padding: 1rem 2rem;

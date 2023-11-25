@@ -1,8 +1,9 @@
 import { Link, useLocation } from "react-router-dom" // linkar com as rotas 
-import { Casa, Container, Li, Menu, Ol } from "./style"
+import { CaixaMenu, Casa, Container, Li, Menu, Ol, Opcoes } from "./style"
 
 import { AiOutlineHome, AiOutlineMenu } from 'react-icons/ai'
 
+import Logo from '../../../public/Img/logo (2).png'
 
 function Header(){
     const { pathname} = useLocation()
@@ -16,6 +17,28 @@ function Header(){
                         <Link to={'/'}><AiOutlineHome/></Link>
                     </Casa>
                     <Casa><AiOutlineMenu/></Casa>
+                    <CaixaMenu>
+                        <Opcoes>
+                            <img src={Logo} alt="logo" />
+                            <ol>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                <li>opções</li>
+                                
+                            </ol>
+                        </Opcoes>
+                    </CaixaMenu>
                   
                 </Menu>
 
