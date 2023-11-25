@@ -1,8 +1,10 @@
 import { Link, useLocation } from "react-router-dom" // linkar com as rotas 
 import { CaixaMenu, Casa, Container, Li, Menu, Ol, Opcoes } from "./style"
 
-import { AiOutlineHome, AiOutlineMenu } from 'react-icons/ai'
-
+import { AiOutlineHome, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { FaPersonSwimming } from "react-icons/fa6";
+import { LuFileSpreadsheet } from "react-icons/lu";
+import { CiEdit, CiDumbbell, CiHeart } from "react-icons/ci";
 import Logo from '../../../public/Img/logo (2).png'
 
 function Header(){
@@ -20,12 +22,13 @@ function Header(){
                     <CaixaMenu>
                         <Opcoes>
                             <img src={Logo} alt="logo" />
+                            <button><AiOutlineClose/></button>
                             <ol>
-                                <li>opções</li>
-                                <li>opções</li>
-                                <li>opções</li>
-                                <li>opções</li>
-                                <li>opções</li>
+                                <li><CiEdit/>Avaliação</li>
+                                <li><FaPersonSwimming/>Dicas de Treino</li>
+                                <li><CiDumbbell />Exercícios</li>
+                                <li><LuFileSpreadsheet/>Plano de treino</li>
+                                <li><CiHeart/>Dicas de Saúde</li>
                                 <li>opções</li>
                                 <li>opções</li>
                                 <li>opções</li>

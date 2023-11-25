@@ -87,9 +87,22 @@ ol{
 }
 
 li{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     width: 90%;
     padding: .5rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+button{
+    position: absolute;
+    z-index: 101;
+    top: 1rem;
+    right: 1.5rem;    
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border:none;
 }
 `
 
