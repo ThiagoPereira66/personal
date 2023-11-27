@@ -70,6 +70,7 @@ background-color: #b5b5b5;
 position: absolute;
 right: 0;
 border: none;
+display: none;
 
 img{
     width: 100%;
