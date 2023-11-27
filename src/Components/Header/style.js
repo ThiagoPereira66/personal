@@ -60,7 +60,7 @@ right: 0;
 top: 0;
 background-color: rgba(0, 0, 0, .5);
 z-index: 100;
-
+display: none;
 `
 
 export const Opcoes = styled.div`
@@ -70,7 +70,6 @@ background-color: #b5b5b5;
 position: absolute;
 right: 0;
 border: none;
-display: none;
 
 img{
     width: 100%;
@@ -116,6 +115,7 @@ background-color: #dbdbdb;
 display: flex;
 justify-content: space-between;
 padding: 1rem 2rem;
+
 
 
 `
