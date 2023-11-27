@@ -26,7 +26,7 @@ function Header(){
                             <ol>
                                 <li><CiEdit/>Avaliação</li>
                                 <li><FaPersonSwimming/>Dicas de Treino</li>
-                                <li><CiDumbbell />Exercícios</li>
+                                <li isActive={pathname.includes('exercicos')}><CiDumbbell /><Link to=('/exercicios')>Exercícios</Link></li>
                                 <li><LuFileSpreadsheet/>Plano de treino</li>
                                 <li><CiHeart/>Dicas de Saúde</li>
                                 <li>opções</li>
