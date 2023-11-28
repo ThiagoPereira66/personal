@@ -1,3 +1,5 @@
+import { Link, useLocation } from "react-router-dom"
+
 import Peito from "../../../public/Img/peito.png"
 import Abdomen from "../../../public/Img/abdomen.png"
 import Costas from "../../../public/Img/costas.png"
@@ -12,20 +14,40 @@ import { Banner, Card, Container, Img } from "./style"
 
 
 
-function Exercicios(){
-    return(
+function Exercicios() {
+    const { pathname } = useLocation()
+
+    return (
         <Container>
-           <Banner src={Poster} alt=""/> 
-        <Card>
-            <Img src={Peito} alt="" />
-            <Img src={Costas} alt="" />
-            <Img src={Triceps} alt="" />
-            <Img src={Abdomen} alt="" />
-            <Img src={Gluteos} alt="" />
-            <Img src={Perna} alt="" />     
-        </Card>
+            <Banner src={Poster} alt="" />
+            <Card>
+                <Link to={'/exercicios/peito'}>
+                    <Img isActive={pathname.includes('peito')} src={Peito} alt="" />
+                </Link>
+
+                <Link to={'/exercicios/costas'}>
+                    <Img isActive={pathname.includes('costas')} src={Costas} alt="" />
+                </Link>
+
+                <Link to={'/exercicios/triceps'}>
+                    <Img isActive={pathname.includes('triceps')} src={Triceps} alt="" />
+                </Link>
+
+                <Link to={'/exercicios/abdomen'}>
+                    <Img isActive={pathname.includes('abdomen')} src={Abdomen} alt="" />
+                </Link>
+
+                <Link to={'/exercicios/gluteos'}>
+                    <Img isActive={pathname.includes('gluteos')} src={Gluteos} alt="" />
+                </Link>
+
+                <Link to={'/exercicios/perna'}>
+                    <Img isActive={pathname.includes('perna')} src={Perna} alt="" />
+                </Link>
+
+            </Card>
             <Banner src={Corrida} />
-        
+
         </Container>
     )
 }

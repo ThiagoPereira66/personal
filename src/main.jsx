@@ -9,7 +9,7 @@ import GlobalStyle from './Components/Style/globalStyle.js'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Rotas/> 
+      <Rotas/>       
       <GlobalStyle/>     
     </BrowserRouter>
   </React.StrictMode>,
