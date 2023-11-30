@@ -13,6 +13,9 @@ import Costas from "../pages/Exercicios/Costas"
 import Triceps from "../pages/Exercicios/Triceps"
 import Abdomen from "../pages/Exercicios/Abdomen"
 import Gluteos from "../pages/Exercicios/Gluteos"
+import Login from "../pages/Registro/indx";
+import Avaliacao from "../pages/Avaliacao";
+import Alongamento from "../pages/Alongamento"
 
 
 function Rotas(){
@@ -24,12 +27,18 @@ function Rotas(){
                 <Route path="/plano-de-treino" element={<PlanoDeTreino/>}/>
                 <Route path="/exercicios" element={<Exercicios/>}/>
                 
+
                 <Route path="/exercicios/peito" element={<Peito/>}/>
                 <Route path="/exercicios/perna" element={<Perna/>}/>
                 <Route path="/exercicios/costas" element={<Costas/>}/>
                 <Route path="/exercicios/triceps" element={<Triceps/>}/>
                 <Route path="/exercicios/abdomen" element={<Abdomen/>}/>
                 <Route path="/exercicios/gluteos" element={<Gluteos/>}/>
+
+
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/avaliacao" element={<Avaliacao/>} />
+                <Route path="/alongamento" element={<Alongamento/>}/>
             </Route>
     
         </Routes>

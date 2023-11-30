@@ -59,18 +59,17 @@ position: fixed;
 right: 0;
 top: 0;
 background-color: rgba(0, 0, 0, .5);
-z-index: 100;
-display: none;
+z-index: 1000;
 
 `
 
 export const Opcoes = styled.div`
 width: 70%;
 height: 100%;
-background-color: #b5b5b5;
+background-color: #fff;
 position: absolute;
 right: 0;
-border: none;
+
 
 img{
     width: 100%;
@@ -93,6 +92,11 @@ li{
     padding: .5rem 0;
     display: flex;
     gap: 1.5rem;
+
+}
+
+a{
+    color: #2e2e2e;
 }
 
 button{
