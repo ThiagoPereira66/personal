@@ -10,12 +10,12 @@ position: relative;
 padding: .5rem;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 
 `
 
 export const Img = styled.img`
-width: 11rem;
+max-width: 45vw;
 border-radius: .5rem;
 margin-bottom: 2rem;
 box-shadow: 0 0 7px black;

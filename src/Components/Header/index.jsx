@@ -13,7 +13,7 @@ import { useState } from "react";
 function Header() {
     const { pathname } = useLocation()
 
-    const [ abrir, setAbrir ] = useState(false);
+    const [ abrir, setAbrir ] = useState(false); // abrir menu 
    
     return (
 
@@ -61,7 +61,6 @@ function Header() {
                 )}
 
             </Menu>
-
             <Ol>
                 <Li isActive={pathname.includes('dicas')}>
                     <Link to={'/dicas'}>DICAS DE SAÚDE</Link>
