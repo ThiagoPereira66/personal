@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom" // linkar com as rotas 
-import { CaixaMenu, Casa, Container, Li, Menu, Ol, Opcoes } from "./style"
+import { CaixaMenu, CaixaMenuWeb, Casa, Container, Li, Menu, Ol, Opcoes } from "./style"
 
 import { AiOutlineHome, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaPersonSwimming } from "react-icons/fa6";
@@ -19,7 +19,7 @@ function Header() {
 
         <Container>
             <Menu>
-
+                {/*menu para celular */}
                 <Casa isActive={pathname === '/'}>
                     <Link to={'/'}><AiOutlineHome /></Link>
                 </Casa>
@@ -74,6 +74,42 @@ function Header() {
                     <Link to={'/plano-de-treino'}>PLANOS DE TREINO</Link>
                 </Li>
             </Ol>
+
+
+             {/*menu para WEB */}
+
+             <CaixaMenuWeb>
+                    <Opcoes>
+                        <img src={Logo} alt="logo" />
+                        
+                        <ol>
+                            <Link to={'/login'}>
+                                <li onClick={() => setAbrir(!abrir)}><CiLogin />Entrar</li>
+                            </Link>
+
+                            <Link to={'/avaliacao'}>
+                                <li onClick={() => setAbrir(!abrir)}><CiEdit />Avaliação</li>
+                            </Link>
+
+                            <Link to={'/alongamento'}>
+                                <li onClick={() => setAbrir(!abrir)}><FaPersonSwimming />Dicas de Treino</li>
+                            </Link>
+                            
+                            <Link to={'/exercicios'}>
+                                <li onClick={() => setAbrir(!abrir)}><CiDumbbell />Exercícios</li>
+                            </Link>
+
+                            <Link to={'plano-de-treino'}>
+                                <li onClick={() => setAbrir(!abrir)}><LuFileSpreadsheet />Plano de treino</li>
+                            </Link>
+
+                            <Link to={'/dicas'}>
+                                 <li onClick={() => setAbrir(!abrir)}><CiHeart />Dicas de Saúde</li>
+                             </Link>
+
+                        </ol>
+                    </Opcoes>
+                </CaixaMenuWeb> 
 
         </Container>
 

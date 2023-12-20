@@ -10,7 +10,7 @@ import Poster from "../../../public/Img/Personal Trainer  Instrutor Fitness.png"
 import Corrida from "../../../public/Img/corrida.png"
 
 
-import { Banner, Card, Container, Img } from "./style"
+import { Banner, Card, Cards, Container, Img } from "./style"
 
 
 
@@ -20,32 +20,43 @@ function Exercicios() {
     return (
         <Container>
             <Banner src={Poster} alt="" />
-            <Card>
+            <Cards>
+                <Card>
                 <Link to={'/exercicios/peito'}>
                     <Img isActive={pathname.includes('peito')} src={Peito} alt="" />
                 </Link>
+                </Card>
 
+                <Card>
                 <Link to={'/exercicios/costas'}>
                     <Img isActive={pathname.includes('costas')} src={Costas} alt="" />
                 </Link>
+                </Card>
 
+                <Card>
                 <Link to={'/exercicios/triceps'}>
                     <Img isActive={pathname.includes('triceps')} src={Triceps} alt="" />
                 </Link>
+                </Card>
 
+                <Card>
                 <Link to={'/exercicios/abdomen'}>
                     <Img isActive={pathname.includes('abdomen')} src={Abdomen} alt="" />
                 </Link>
+                </Card>
 
+                <Card>
                 <Link to={'/exercicios/gluteos'}>
                     <Img isActive={pathname.includes('gluteos')} src={Gluteos} alt="" />
                 </Link>
+                </Card>
 
+                <Card>
                 <Link to={'/exercicios/perna'}>
                     <Img isActive={pathname.includes('perna')} src={Perna} alt="" />
                 </Link>
-
-            </Card>
+                </Card>
+            </Cards>
             <Banner src={Corrida} />
 
         </Container>

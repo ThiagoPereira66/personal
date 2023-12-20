@@ -9,6 +9,7 @@ export default createGlobalStyle`
     list-style: none;
     outline: none;
     text-decoration: none;
+    max-width: 1440px;
     
 }
 

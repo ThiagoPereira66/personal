@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 width: 100vw;
-height: 100vh;
+height: 100%;
 position: absolute;
 top: 0;
 background-color: #000;
+
+
+@media screen and (min-width: 750px){
+   display: none;
+}
 
 `
 
@@ -28,4 +33,7 @@ border: none;
 background-color: rgba(0, 0 ,0 , .2);
 color: #fff;
 box-shadow: 0 0 22px 5px green;
+
 `
+
+

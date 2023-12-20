@@ -18,6 +18,10 @@ display: flex;
 padding: 1rem 0 ;
 justify-content: space-around;
 
+@media screen and (min-width: 950px) {
+    display: none;
+}
+
 `
 export const Li = styled.li`
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +30,7 @@ position: relative;
 
 a{
 color: #2e2e2e;
+font-size: 3vw;
 
 }
 
@@ -51,6 +56,10 @@ a{
 font-size: 2rem;
     color:#2e2e2e;
 
+@media screen and (min-width: 950px) {
+    display: none;
+}
+
 `
 export const CaixaMenu = styled.div`
 width: 100%;
@@ -61,6 +70,26 @@ top: 0;
 background-color: rgba(0, 0, 0, .5);
 z-index: 1000;
 
+@media screen and (min-width: 950px) {
+    display: none;
+}
+
+`
+
+export const CaixaMenuWeb = styled.div`
+position: fixed;
+right: .2rem;
+top: 3em;
+z-index: 1000;
+display: none;
+
+@media screen and (min-width: 950px) {
+    display: block;
+    width: 15vw;
+    height: 35rem;
+    position: fixed;    
+}
+
 `
 
 export const Opcoes = styled.div`
@@ -70,19 +99,18 @@ background-color: #fff;
 position: absolute;
 right: 0;
 
-
 img{
     width: 100%;
     position: relative;
 }
 
 ol{
-    overflow-y:auto;
+    overflow-x: hidden;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;    
-    height: 40rem;
+    height: 80%;
     
 }
 
@@ -95,9 +123,20 @@ li{
 
 }
 
+li:hover{
+    background-color: #9d9d93;
+    color: white;
+    transition: .6s;
+}
+
 a{
     color: #2e2e2e;
 }
+
+a:hover{
+    color: white;
+}
+
 
 button{
     position: absolute;
@@ -108,6 +147,18 @@ button{
     color: white;
     background: none;
     border:none;
+}
+
+@media screen and (min-width: 620px) {
+   width : 30%; 
+
+}
+
+
+@media screen and (min-width: 950px) {
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: .2rem;
 }
 `
 

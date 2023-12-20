@@ -5,13 +5,20 @@ import { Link } from 'react-router-dom'
 function Home() {
 
     return (
+        <>
         <Container>
-
             <Video src={Videos} autoPlay muted loop></Video>
             <Link to={'/exercicios'}>
                 <Botao >Acessar</Botao>
             </Link>
         </Container>
+
+        {/* para web */}
+
+        <div>
+            
+        </div>
+        </>
     )
 
 }
